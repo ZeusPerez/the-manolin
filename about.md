@@ -11,7 +11,7 @@ title: About
 
 I'm Zeus, a passionate software engineer born in Asturias but based in Madrid. Happily coding in Ruby and Go but never reject a chance to learn new technologies.
 
-You can find me on [Linkedin](https://www.linkedin.com/in/zeus-perez/) or using the form below.
+You can find me on [Linkedin](https://www.linkedin.com/in/zeus-perez/) or you can contact me using the form below.
 
 
 <br/>

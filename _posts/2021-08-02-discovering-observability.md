@@ -27,7 +27,7 @@ Also, it could be a good idea to have a dashboard or section with your SLAs, SLO
 
 Besides this service dashboard, it is always a good idea to have a dashboard with golden metrics close related to the nature of your business. If you have an e-commerce, for example, you will want to see some global metrics like sessions, users, orders, ships and so on.
 
-I'm talking about the point of view of the software engineer. If you are a systems engineer or you work with the infrastructure, you'll probably need different metrics.
+I'm talking about the point of view of the software engineer. If you are a systems engineer or you work with the infrastructure, you'll probably need different metrics. Maybe [the USE method](https://www.brendangregg.com/usemethod.html) can be helpful if it is the case.
 
 ### Alerting
 If you want to make fine-grain alerting, you will need fine-grain metrics. The observability is a requirement for the alerting (always talking about automatic alerting). If one of your third party providers is failing and there is nothing actionable you can do, you wouldn't want an alert that wakes you up in the middle of the night, right? In order to have this level of detail in the alerting and being able to exclude this kind of scenario, or include some others that are very specific, you will have very high control of your metrics that will require an elaborated observability system.
@@ -40,6 +40,6 @@ Having all this and being able to evolve your observability sounds great, but it
 
 - **Tools.** Adding metrics should be as easy as possible for the developers. With a very few lines (the fewer the better), someone should be able to add ad-hoc metrics so you will need some kind of tooling for this, which usually are in a library format. Also, having automatic metrics is a bonus here. Each time you add a server, some metrics by default could be added if you use the proper tooling. The RED metrics are the usual candidates for this. However, when adding a metric becomes difficult, laziness or hurries will appear and the developers would care less about this leading to a lack of observability.
 
-- **Team awareness.**  If the team agrees to have a guideline for this and everybody adds and maintains observability, this becomes very easy for the member of the team and new joiners. The inertia of the team drag for good and for bad (in this case for good). If you have a good observability culture, you will have the metrics in mind during the development and the reviews, and they will be, as I mentioned above, like having tests on your code.
+- **Team awareness.** If the team agrees to have a guideline for this and everybody adds and maintains observability, this becomes very easy for the member of the team and new joiners. The inertia of the team drag for good and for bad (in this case for good). If you have a good observability culture, you will have the metrics in mind during the development and the reviews, and they will be, as I mentioned above, like having tests on your code.
 
 This is a very personal opinion about my latest learnings in the observability world, but as it always happens in software, this could be improved a lot and it is very specific to your use case (it always depends). Hope these thoughts could be helpful to someone! 👋

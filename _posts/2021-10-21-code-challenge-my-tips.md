@@ -146,9 +146,9 @@ There are some points that I (almost) always add to the `readme`:
 
 - Future interactions: I will always propose improvements that I would implement in the future. Although, as always, this depends a lot on the code challenge, there are some points that are wildcards for many of them:
   - Observability: in production code, you would add more observability and reporting metrics to the proper platform, but it is usually outside the scope of the code challenge.
--  CI/CD: in a code challenge it does not make sense to add continuous delivery, although if you are using a repo you can add some continuous integration. At this point, you can add how you would deliver this code. For example, if you are implementing a client or library you can add code for publishing it or if you are implementing a server you can add code for deploy it in the cloud.
-- Distributed systems: you usually design the code challenge to run in a single node but you can mention what you will need for making it distributed. For example, if you chose in-memory storage, you can mention that this won't work in distributed systems and you would need an external database.
-- BUGs: if you added a bugs section in the readme, you can also mention how you will fix them or at least prevent them, for example, adding test cases for all the possible malfunctioning scenarios.
+  -  CI/CD: in a code challenge it does not make sense to add continuous delivery, although if you are using a repo you can add some continuous integration. At this point, you can add how you would deliver this code. For example, if you are implementing a client or library you can add code for publishing it or if you are implementing a server you can add code for deploy it in the cloud.
+  - Distributed systems: you usually design the code challenge to run in a single node but you can mention what you will need for making it distributed. For example, if you chose in-memory storage, you can mention that this won't work in distributed systems and you would need an external database.
+  - BUGs: if you added a bugs section in the readme, you can also mention how you will fix them or at least prevent them, for example, adding test cases for all the possible malfunctioning scenarios.
 
 Additionally, you could add all the information that you think is valuable for the reviewer.
 <br/><br/>

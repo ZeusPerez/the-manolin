@@ -98,6 +98,9 @@ Additionally, there are some other mechanisms that are relatively easy to implem
 - Retriers: sometimes you would like to retry momentary errors. Again, like the previous point, there are a lot of open-source libraries for this but implement a basic behaviour with linear and/or backoff retrying is not very difficult.
 - Rate limiters: if the code challenge consists in implementing something on the server-side, this is a good mechanism for gaining resiliency.
 - Another backpressure mechanism:  you can get some ideas from [this post](https://medium.com/@jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7) to add extra resiliency to your code.
+
+You can find examples of how to apply these concepts in the following links: [on a server](https://ieftimov.com/post/make-resilient-golang-net-http-servers-using-timeouts-deadlines-context-cancellation/) and [on a client](https://medium.com/@_jesus_rafael/making-http-client-more-resilient-in-go-d24c66a64bd1).
+
 <br/><br/>
 
 ## Docker

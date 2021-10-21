@@ -35,6 +35,7 @@ Regarding the error handling, you should be doing it like you do it for any prod
 - Handle exceptions and error to fail gratefully returning the proper error with the proper message instead of panic.
 - Define custom errors when it makes sense.
 - Log the errors with the proper level (and report if necessary).
+- Fail fast.
 
 Antoher important point that can give you points and is a good practise is **shutdown gratefully**. If you have to use databases or any other dependencies in which the order in the shutdown can generate errors or incorrect closed connection it makes sense to implement a shutdown mechanism that allows to handle an shutdown signal like SIGINT, SIGKILL or SIGTERM properly. [This post](https://medium.com/honestbee-tw-engineer/gracefully-shutdown-in-go-http-server-5f5e6b83da5a) explain how it can be done in Golang for example.
 <br/><br/>

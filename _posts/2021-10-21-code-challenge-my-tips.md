@@ -95,7 +95,7 @@ If you want to every exhaustive, you can also add more types of tests like:
 The more affordable point here is the **timeouts**. Add timeouts and make them configurable in your dependencies. This is easy to tackle and gives good impressions.
 
 Additionally, there are some other mechanisms that are relatively easy to implement but they usually are outside the scope of a code challenge:
-- Circuit breakers: it is a good practice to stop hitting any dependency if it is not available. There are a lot of third-party implementations but it is not difficult to implement your own.
+- Circuit breakers: it is a good practice to stop hitting any dependency if it is not available. There are a lot of third-party implementations but it is not difficult to implement your own. A simpler alternative to this can be using a [client-side throttling](https://sre.google/sre-book/handling-overload/).
 - Retriers: sometimes you would like to retry momentary errors. Again, like the previous point, there are a lot of open-source libraries for this but implement a basic behaviour with linear and/or backoff retrying is not very difficult.
 - Rate limiters: if the code challenge consists in implementing something on the server-side, this is a good mechanism for gaining resiliency.
 - Another backpressure mechanism:  you can get some ideas from [this post](https://medium.com/@jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7) to add extra resiliency to your code.

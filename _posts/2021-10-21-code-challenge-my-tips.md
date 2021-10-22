@@ -52,6 +52,9 @@ Apart from that, I would try to follow the SOLID principles and try to take atte
 - Add constants or config files instead of hardcoding in the code.
 - Care about configurations: allow configurations HTTP clients, database connectors, etc.
 - Etc.
+
+Another important point here is to use the right types. Don't use an `int64` if an `int32` is enough. A very common mistake here is with the specific case of handling money. Many times, people forget (or don't know) about [precision problems](https://stackoverflow.com/questions/3730019/why-not-use-double-or-float-to-represent-currency) with `float` and use a `float` instead of `big decimal` for money amounts.
+
 <br/><br/>
 
 ## Performance
